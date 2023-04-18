@@ -202,12 +202,12 @@ section {
 /*About*/
 .about-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: none;
     padding-top: 3.5rem;
     padding-bottom: 5rem;
     .right-about {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4,1fr);
         grid-gap: 2rem;
         .about-item {
             border: 1px solid var(--color-grey-5);
@@ -250,25 +250,14 @@ section {
         }
     }
 
-    .left-about {
-        padding-right: 5rem;
-        p {
-            line-height: 2rem;
-            padding: 1rem;
-            color: var(--color-grey-1);
-        }
-        h4 {
-            font-size: 2rem;
-            text-transform: uppercase;
-        }
-    }
+ 
 }
 
 .about-stats {
     padding-bottom: 4rem;
     .progress-bars {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-gap: 2rem;
         .progress-bar {
             display: flex;
@@ -382,7 +371,7 @@ section {
 
 .portfolios {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem;
     margin-top: 3rem;
     .portfolio-item {
@@ -443,16 +432,33 @@ section {
         }
     }
 }
+.port-text {
+    margin-top: -7px;
+    padding: 1.1rem;
+    border-top: 8px solid var(--color-secondary);
+    h4 {
+        font-size: 1.5rem;
+        margin-bottom: .7rem;
+        transition: all .4s ease-in-out;
+        cursor: pointer;
+        &:hover { color: var(--color-secondary); }
+    }
+    p{
+        color: var(--color-grey-2);
+        line-height: 2rem;
+        padding-bottom: 1rem;
+    }
+}
 
 .portfolio-item:hover .hover-items {
     opacity: 1;
     transform: scale(1);
 }
 
-//Blogs Section
+/*Blogs Section
 .blogs {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem;
     margin-top: 3rem;
     .blog {
@@ -498,7 +504,7 @@ section {
             }
         }
     }
-}
+}*/
 
 
 //Contact section
@@ -519,7 +525,7 @@ section {
 
         .contact-info {
             .contact-item {
-                display: flex;
+                display: block;
                 align-items: center;
                 justify-content: space-between;
                 p {
