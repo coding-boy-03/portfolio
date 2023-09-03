@@ -374,10 +374,10 @@ This application is used to generate complex passwords which is difficult to gue
 
                                 <div class="input-control i-c-2">
                                     <input type="text" name="name"
-                                        placeholder="YOUR NAME" >
+                                        placeholder="YOUR NAME" aria-required="true">
 
                                     <input type="email" name="email"
-                                        placeholder="YOUR EMAIL">
+                                        placeholder="YOUR EMAIL" aria-required="true">
                                 </div>
 
                                 <div class="input-control">
@@ -390,12 +390,8 @@ This application is used to generate complex passwords which is difficult to gue
                                 </div>
                                 <div class="field" >
                                     <input type="file" name="myfile" id="myfile" placeholder="UploadFile" 
-                                rows="7">
-                                </div>
-                                </div class="field">
-                                <div data-netlify-recaptcha="true"></div>
-                                <div>
-                                <div>
+                                         rows="7">
+                                    <div data-netlify-recaptcha="true"></div>
                                     <button type="submit">SUBMIT</button>
                                 </div>
                             </form>
