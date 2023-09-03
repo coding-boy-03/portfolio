@@ -370,17 +370,18 @@ This application is used to generate complex passwords which is difficult to gue
                             </div>
                         </div>
                         <div class="right-contact">
-                            <form name="contact" method="POST" class="contact-form" data-netlify="true" >
+                            <form name="contact" method="POST" class="contact-form" data-netlify="true" onSubmit="submit">
+
                                 <div class="input-control i-c-2">
                                     <input type="text" name="name"
-                                        placeholder="YOUR NAME" required>
+                                        placeholder="YOUR NAME" >
 
                                     <input type="email" name="email"
                                         placeholder="YOUR EMAIL">
                                 </div>
 
                                 <div class="input-control">
-                                    <input type="text" required
+                                    <input type="text" 
                                         placeholder="ENTER SUBJECT">
                                 </div>
                                 <div class="input-control">
@@ -390,16 +391,9 @@ This application is used to generate complex passwords which is difficult to gue
                                 <div class="field" >
                                     <input type="file" name="myfile" id="myfile" placeholder="UploadFile" 
                                 rows="7">
-                                
-
-                                    
                                 </div>
-                                <div class="submit-btn">
-                                    <a href="#" class="main-btn">
-                                        <span class="btn-text" type="submit">Submit</span>
-                                        <span class="btn-icon"><i class="fas
-                                                fa-arrow-up"></i></span>
-                                    </a>
+                                <div>
+                                    <button type="submit">SUBMIT</button>
                                 </div>
                             </form>
                         </div>
